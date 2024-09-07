@@ -17,6 +17,19 @@
   --border-color-chall3: #00a4e4;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 30px auto;
+}
+
+ul {
+  list-style: none;
+}
+
 /*common styles */
 
 body {
@@ -25,24 +38,19 @@ body {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 1024px;
   margin: 0 auto;
+  padding: 20px;
   border-top: 1px solid var(--main-text-color);
   border-bottom: 1px solid var(--main-text-color);
 }
 
-h1 {
-  margin: 0 auto;
-}
-
 .section {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .challenge1 {
-  margin-top: 50px;
 }
 
 .challenge24 {
@@ -131,3 +139,88 @@ h1 {
   border: 5px solid var(--border-color-chall3);
   transition: all 0.5s ease-in-out;
 }
+
+/*challenge4 styles */
+
+.challenge4 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 0 20px 20px;
+  border: 3px outset var(--main-text-color);
+  border-radius: 10px;
+  background-color: var(--main-text-color);
+  color: var(--btn-color-hover);
+}
+
+.card-thumbnail {
+  padding: 10px 10px 20px;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--body-bg);
+}
+
+.card-thumbnail-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 10px 20px;
+  background-color: var(--body-bg);
+  border-radius: 0 0 10px 10px;
+}
+
+.card-avatar {
+  border-radius: 5px;
+}
+
+.card-avatar-img {
+  width: 90px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.card-details {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 900;
+}
+.card-stats {
+  display: none;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.card:hover .card-stats {
+  display: flex;
+  padding: 10px 10px 20px;
+  background-color: var(--body-bg);
+  border-radius: 0 0 10px 10px;
+}
+
+.card:hover .card-body {
+  border-radius: 0;
+}
+
+/*challenge5 styles */
+/*challenge6 styles */
+/*challenge7 styles */
+/*challenge8 styles */
+/*challenge9 styles */
+/*challenge10 styles */
+/*challenge11 styles */
+/*challenge12 styles */
+/*challenge13 styles */
+/*challenge14 styles */
+/*challenge15 styles */
