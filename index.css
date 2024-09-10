@@ -7,7 +7,7 @@
   --body-bg: #1e1f25;
   --btn-bg: #000;
   --btn-color: #ec9a9a;
-  --btn-color-hover: #fff;
+  --white-color: #fff;
   --grad-color1: #eeaf61;
   --grad-color2: #fb9062;
   --grad-color3: #ee5d6c;
@@ -24,6 +24,9 @@
   --green-color-chall11: #007e39;
   /*challenge14*/
   --blue-color-chall14: #0269a6;
+  /*challenge15*/
+  --orange-color-chall15: #e15307;
+  --green-color-chall15: #10af2a;
 }
 
 /*resets*/
@@ -112,7 +115,7 @@ body {
   );
 }
 .container:hover .button {
-  color: var(--btn-color-hover);
+  color: var(--white-color);
 }
 
 /*challenge3 styles */
@@ -139,7 +142,7 @@ body {
   border: 3px outset var(--main-text-color);
   border-radius: 10px;
   background-color: var(--main-text-color);
-  color: var(--btn-color-hover);
+  color: var(--white-color);
 }
 .card-thumbnail {
   padding: 10px 10px 20px;
@@ -287,7 +290,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   line-height: 1.5;
-  color: var(--btn-color-hover);
+  color: var(--white-color);
   background-color: var(--border-color-chall3);
   animation: wrdCarousel infinite 20s;
 }
@@ -342,7 +345,7 @@ body {
   background-color: var(--blue-color-chall9);
 }
 .white {
-  background-color: var(--btn-color-hover);
+  background-color: var(--white-color);
 }
 .red {
   background-color: var(--red-color-chall9);
@@ -370,10 +373,10 @@ body {
   flex-direction: row-reverse;
   height: 400px;
   width: calc(400px * 3 / 2);
-  background-color: var(--btn-color-hover);
+  background-color: var(--white-color);
 }
 .whiteMadagascar {
-  background-color: var(--btn-color-hover);
+  background-color: var(--white-color);
 }
 .redMadagascar {
   background-color: var(--red-color-chall9);
@@ -400,7 +403,7 @@ body {
 .cross {
     height: calc(600px * 3/16);
     width: calc(600px * 5/8);
-    background: var(--btn-color-hover);
+    background: var(--white-color);
 }
 
 .cross2 {
@@ -411,12 +414,12 @@ body {
 .cross1 {
   width: calc(600px * 5 / 8);
   height: calc(600px * 3 / 16);
-  background-color: var(--btn-color-hover);
+  background-color: var(--white-color);
 }
 .cross2 {
   height: calc(600px * 5 / 8);
   width: calc(600px * 3 / 16);
-  background-color: var(--btn-color-hover);
+  background-color: var(--white-color);
   position: absolute;
 }
 
@@ -427,7 +430,7 @@ body {
   align-items: center;
   width: 600px;
   height: calc(600px * 2 / 3);
-  background-color: var(--btn-color-hover);
+  background-color: var(--white-color);
 }
 .circle-japan {
   width: calc(600px * 2 / 5);
@@ -445,7 +448,7 @@ body {
   background-color: var(--blue-color-chall14);
   position: relative;
 }
-.stripe {
+.stripe-sweden {
   background-color: var(--yellow-color-chall10);
 }
 .stripe-yellow {
@@ -458,7 +461,34 @@ body {
   position: absolute;
   left: calc(600px * 5 / 16);
 }
+
 /*challenge15 styles */
+.flag-niger {
+  width: 600px;
+  height: calc(600px * 6 / 7);
+}
+.stripe-niger {
+  width: 600px;
+  height: calc(600px * 6 / 7 / 3);
+}
+.orange-niger {
+  background-color: var(--orange-color-chall15);
+}
+.white-niger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+}
+.circle-niger {
+  width: calc(600px * 6 / 7 / 3 * 0.85);
+  height: calc(600px * 6 / 7 / 3 * 0.85);
+  border-radius: 50%;
+  background-color: var(--orange-color-chall15);
+}
+.green-niger {
+  background-color: var(--green-color-chall15);
+}
 /*challenge16 styles */
 /*challenge17 styles */
 /*challenge18 styles */
