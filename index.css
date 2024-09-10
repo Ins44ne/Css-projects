@@ -324,6 +324,59 @@ body {
 }
 
 /*challenge8 styles */
+
+.words {
+  font-size: 36px;
+}
+
+.words::after {
+  content: "";
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1.5;
+  color: var(--btn-color-hover);
+  background-color: var(--border-color-chall3);
+  animation: wrdCarousel infinite 20s;
+}
+
+@keyframes wrdCarousel {
+  0% {
+  content: 'coding';
+  }
+  10% {
+  content: 'sport';
+  }
+  20% {
+    content: 'cats';
+  }
+  30% {
+  content: 'cars';
+  }
+  40% {
+  content: 'basketball';
+  }
+  50% {
+  content: 'movies';
+  }
+  60% {
+  content: 'music';
+  }
+  70% {
+  content: 'fruits';
+  }
+  80% {
+  content: 'play PC games';
+  }
+  90% {
+  content: 'airplanes';
+  }
+  100% {
+  content: 'coding';
+  }
+}
+
+
 /*challenge9 styles */
 /*challenge10 styles */
 /*challenge11 styles */
