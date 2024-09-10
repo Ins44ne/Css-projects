@@ -5,7 +5,6 @@
   /*challenge2*/
   --font-family: "Karla", sans-serif;
   --body-bg: #1e1f25;
-  --btn-bg: #000;
   --btn-color: #ec9a9a;
   --white-color: #fff;
   --grad-color1: #eeaf61;
@@ -27,6 +26,17 @@
   /*challenge15*/
   --orange-color-chall15: #e15307;
   --green-color-chall15: #10af2a;
+  /*challenge16*/
+  --font-main: "Noto Sans", sans-serif;
+  --profile-bg: #0d1117;
+  --profile-color: #c9d1d9;
+  --profile-img-border: #2e343b;
+  --username-font-color: #8b949e;
+  --btn-bg: #21262d;
+  --btn-color: #c9d1d9;
+  --btn-bg-hover: #30363d;
+  --btn-border: #373b43;
+  --btn-border-hover: #8c949e;
 }
 
 /*resets*/
@@ -98,7 +108,7 @@ body {
   font-size: 24px;
   letter-spacing: 5px;
   padding: 20px 75px;
-  background: var(--btn-bg);
+  background: var(--main-text-color);
   color: var(--btn-color);
   cursor: pointer;
 }
@@ -202,6 +212,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  height: 150px;
 }
 .circle {
   width: 40px;
@@ -211,7 +222,7 @@ body {
 }
 @keyframes pulse {
   from {
-    background: var(--btn-bg);
+    background: var(--main-text-color);
   }
 
   to {
@@ -259,7 +270,7 @@ body {
   width: 160px;
   height: 160px;
   z-index: 1;
-  background-color: var(--btn-bg);
+  background-color: var(--main-text-color);
 }
 .ring-2 {
   width: 120px;
@@ -358,7 +369,7 @@ body {
   width: calc(360px * 5 / 3);
 }
 .black {
-  background-color: var(--btn-bg);
+  background-color: var(--main-text-color);
 }
 .red {
   background-color: var(--red-color-chall9);
@@ -489,7 +500,64 @@ body {
 .green-niger {
   background-color: var(--green-color-chall15);
 }
+
 /*challenge16 styles */
+.profile-container {
+  padding: 20px 40px;
+  border-radius: 0 0 10px 10px;
+  background-color: var(--main-text-color);
+  font-family: var(--font-main);
+}
+.profile-content,
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+.profile-content {
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  background-color: var(--profile-bg);
+  border-radius: 5px;
+}
+.profile-details {
+}
+.profile-img {
+  max-width: 400px;
+  max-width: 250px;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--profile-img-border);
+}
+.profile-details-name {
+  font-weight: 600;
+  color: var(--profile-color);
+}
+.profile-details-nickname {
+  font-weight: 400;
+  color: var(--username-font-color);
+}
+.profile-details-text,
+.profile-details-button {
+  margin-top: 20px;
+}
+.profile-details-text {
+  color: var(--profile-color);
+}
+.profile-details-button {
+  font-size: 18px;
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  border: 2px solid var(--btn-border);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.profile-details-button:hover {
+  background-color: var(--btn-bg-hover);
+  border: 2px solid var(--btn-border-hover);
+}
 /*challenge17 styles */
 /*challenge18 styles */
 /*challenge19 styles */
