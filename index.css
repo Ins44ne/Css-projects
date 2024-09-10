@@ -15,9 +15,11 @@
   --grad-color5: #6a0d83;
   /*challenge3*/
   --border-color-chall3: #00a4e4;
-    /*challenge3*/
+    /*challenge9*/
     --blue-color-chall9: #001f99;
     --red-color-chall9: #fe002d;
+    /*challenge10*/
+    --yellow-color-chall10: #FFCE00;
 }
 
 * {
@@ -395,7 +397,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.stripe {
+.stripeFrance {
   width: 200px;
   height: calc(200px * 3 / 2);
 }
@@ -411,6 +413,33 @@ body {
 }
 
 /*challenge10 styles */
+
+.challenge10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-germany {
+  display: grid;
+  height: 360px;
+  width: calc(360px * 5 / 3);
+}
+.stripeGermany {
+}
+
+.black {
+  background-color: var(--btn-bg);
+}
+.red {
+  background-color: var(--red-color-chall9);
+}
+.yellow {
+  background-color: var(--yellow-color-chall10);
+}
+
+
 /*challenge11 styles */
 /*challenge12 styles */
 /*challenge13 styles */
