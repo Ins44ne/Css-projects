@@ -37,6 +37,15 @@
   --btn-bg-hover: #30363d;
   --btn-border: #373b43;
   --btn-border-hover: #8c949e;
+  /*challenge20*/
+  --stage-1: 25%;
+  --stage-2: 50%;
+  --stage-3: 75%;
+  --stage-4: 100%;
+  --stage-1-bg: red;
+  --stage-2-bg: orangered;
+  --stage-3-bg: greenyellow;
+  --stage-4-bg: green;
 }
 
 /*resets*/
@@ -652,6 +661,44 @@ body {
   transform: rotate(180deg);
 }
 /*challenge20 styles */
+.container-bar {
+  width: 80%;
+}
+.progress-bar {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  background: var(--profile-color);
+  border: 1px solid var(--body-bg);
+}
+.prog-status {
+  height: 40px;
+  border-radius: 20px;
+  animation: stages 8s infinite ease-out;
+}
+@keyframes stages {
+  0% {
+    background: inherit;
+    width: 0;
+  }
+  25% {
+    background: var(--stage-1-bg);
+    width: var(--stage-1);
+  }
+  50% {
+    background: var(--stage-2-bg);
+    width: var(--stage-2);
+  }
+  75% {
+    background: var(--stage-3-bg);
+    width: var(--stage-3);
+  }
+  100% {
+    background: var(--stage-4-bg);
+    width: var(--stage-4);
+  }
+}
+
 /*challenge21 styles */
 /*challenge22 styles */
 /*challenge23 styles */
