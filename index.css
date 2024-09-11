@@ -591,7 +591,7 @@ body {
 .containerAceCard {
   height: 550px;
   width: calc(550px * 2 / 3);
-  padding: 50px;
+  padding: 20px;
   border: 2px solid var(--profile-bg);
   border-radius: 5px;
   background-color: var(--white-color);
@@ -602,7 +602,6 @@ body {
   justify-content: space-between;
   height: 100%;
   font-size: 48px;
-  font-weight: 900;
 }
 .topAce,
 .centerAce,
@@ -613,14 +612,47 @@ body {
   justify-content: flex-start;
 }
 .centerAce {
-  font-size: 150px;
   justify-content: center;
+  font-size: 150px;
+  font-weight: 900;
 }
 .bottomAce {
   flex-direction: column;
   transform: rotateX(180deg);
 }
 /*challenge19 styles */
+.containerCard4 {
+  display: flex;
+  justify-content: center;
+}
+.cardCard4 {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  height: 550px;
+  width: calc(550px * 2 / 3);
+  padding: 20px;
+  border: 2px solid var(--profile-bg);
+  border-radius: 5px;
+  background-color: var(--white-color);
+  color: var(--red-color-challenge9);
+  font-size: 3em;
+}
+.leftCard4 {
+}
+.middleCard4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+}
+.rightCard4 {
+  transform: rotateX(180deg);
+}
+.middleCard4 :nth-child(3),
+.middleCard4 :nth-child(4) {
+  transform: rotate(180deg);
+}
 /*challenge20 styles */
 /*challenge21 styles */
 /*challenge22 styles */
