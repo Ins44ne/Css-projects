@@ -1,4 +1,4 @@
-/*consts */
+/*constants */
 
 :root {
   --main-text-color: #000;
@@ -13,19 +13,19 @@
   --grad-color4: #ce4993;
   --grad-color5: #6a0d83;
   /*challenge3*/
-  --border-color-chall3: #00a4e4;
+  --border-color-challenge3: #00a4e4;
   /*challenge9*/
-  --blue-color-chall9: #001f99;
-  --red-color-chall9: #fe002d;
+  --blue-color-challenge9: #001f99;
+  --red-color-challenge9: #fe002d;
   /*challenge10*/
-  --yellow-color-chall10: #ffce00;
+  --yellow-color-challenge10: #ffce00;
   /*challenge11*/
-  --green-color-chall11: #007e39;
+  --green-color-challenge11: #007e39;
   /*challenge14*/
-  --blue-color-chall14: #0269a6;
+  --blue-color-challenge14: #0269a6;
   /*challenge15*/
-  --orange-color-chall15: #e15307;
-  --green-color-chall15: #10af2a;
+  --orange-color-challenge15: #e15307;
+  --green-color-challenge15: #10af2a;
   /*challenge16*/
   --font-main: "Noto Sans", sans-serif;
   --profile-bg: #0d1117;
@@ -137,7 +137,7 @@ body {
 }
 .search-bar:focus {
   width: 300px;
-  border: 5px solid var(--border-color-chall3);
+  border: 5px solid var(--border-color-challenge3);
   transition: all 0.5s ease-in-out;
 }
 
@@ -276,7 +276,7 @@ body {
   width: 120px;
   height: 120px;
   z-index: 2;
-  background-color: var(--border-color-chall3);
+  background-color: var(--border-color-challenge3);
 }
 .ring-3 {
   width: 80px;
@@ -302,7 +302,7 @@ body {
   border-radius: 5px;
   line-height: 1.5;
   color: var(--white-color);
-  background-color: var(--border-color-chall3);
+  background-color: var(--border-color-challenge3);
   animation: wrdCarousel infinite 20s;
 }
 @keyframes wrdCarousel {
@@ -353,13 +353,13 @@ body {
   height: calc(200px * 3 / 2);
 }
 .blue {
-  background-color: var(--blue-color-chall9);
+  background-color: var(--blue-color-challenge9);
 }
 .white {
   background-color: var(--white-color);
 }
 .red {
-  background-color: var(--red-color-chall9);
+  background-color: var(--red-color-challenge9);
 }
 
 /*challenge10 styles */
@@ -372,10 +372,10 @@ body {
   background-color: var(--main-text-color);
 }
 .red {
-  background-color: var(--red-color-chall9);
+  background-color: var(--red-color-challenge9);
 }
 .yellow {
-  background-color: var(--yellow-color-chall10);
+  background-color: var(--yellow-color-challenge10);
 }
 
 /*challenge11 styles */
@@ -390,12 +390,12 @@ body {
   background-color: var(--white-color);
 }
 .redMadagascar {
-  background-color: var(--red-color-chall9);
+  background-color: var(--red-color-challenge9);
   height: 50%;
   width: 400px;
 }
 .greenMadagascar {
-  background-color: var(--green-color-chall11);
+  background-color: var(--green-color-challenge11);
   height: 50%;
   width: 400px;
 }
@@ -404,7 +404,7 @@ body {
 .flag-swiss {
   width: 600px;
   height: 600px;
-  background-color: var(--red-color-chall9);
+  background-color: var(--red-color-challenge9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -447,7 +447,7 @@ body {
   width: calc(600px * 2 / 5);
   height: calc(600px * 2 / 5);
   border-radius: 50%;
-  background-color: var(--red-color-chall9);
+  background-color: var(--red-color-challenge9);
 }
 /*challenge14 styles */
 .flag-sweden {
@@ -456,11 +456,11 @@ body {
   align-items: center;
   width: 600px;
   height: calc(600px * 5 / 8);
-  background-color: var(--blue-color-chall14);
+  background-color: var(--blue-color-challenge14);
   position: relative;
 }
 .stripe-sweden {
-  background-color: var(--yellow-color-chall10);
+  background-color: var(--yellow-color-challenge10);
 }
 .stripe-yellow {
   width: 600px;
@@ -483,7 +483,7 @@ body {
   height: calc(600px * 6 / 7 / 3);
 }
 .orange-niger {
-  background-color: var(--orange-color-chall15);
+  background-color: var(--orange-color-challenge15);
 }
 .white-niger {
   display: flex;
@@ -495,10 +495,10 @@ body {
   width: calc(600px * 6 / 7 / 3 * 0.85);
   height: calc(600px * 6 / 7 / 3 * 0.85);
   border-radius: 50%;
-  background-color: var(--orange-color-chall15);
+  background-color: var(--orange-color-challenge15);
 }
 .green-niger {
-  background-color: var(--green-color-chall15);
+  background-color: var(--green-color-challenge15);
 }
 
 /*challenge16 styles */
@@ -519,8 +519,6 @@ body {
   padding: 20px 40px;
   background-color: var(--profile-bg);
   border-radius: 5px;
-}
-.profile-details {
 }
 .profile-img {
   max-width: 400px;
@@ -559,6 +557,36 @@ body {
   border: 2px solid var(--btn-border-hover);
 }
 /*challenge17 styles */
+.toggle-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-label {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 42px;
+  padding: 2px;
+  border: 3px solid var(--main-text-color);
+  border-radius: 40px;
+  background-color: var(--white-color);
+}
+.toggle-input {
+  display: none;
+}
+.toggle-switch {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-text-color);
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+.toggle-input:checked ~ .toggle-switch {
+  background-color: var(--blue-color-challenge9);
+  transform: translateX(calc(100px - 40px));
+}
+
 /*challenge18 styles */
 /*challenge19 styles */
 /*challenge20 styles */
