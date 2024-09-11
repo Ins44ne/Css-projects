@@ -588,6 +588,38 @@ body {
 }
 
 /*challenge18 styles */
+.containerAceCard {
+  height: 550px;
+  width: calc(550px * 2 / 3);
+  padding: 50px;
+  border: 2px solid var(--profile-bg);
+  border-radius: 5px;
+  background-color: var(--white-color);
+}
+.cardAce {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  font-size: 48px;
+  font-weight: 900;
+}
+.topAce,
+.centerAce,
+.bottomAce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.centerAce {
+  font-size: 150px;
+  justify-content: center;
+}
+.bottomAce {
+  flex-direction: column;
+  transform: rotateX(180deg);
+}
 /*challenge19 styles */
 /*challenge20 styles */
 /*challenge21 styles */
