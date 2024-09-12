@@ -44,15 +44,6 @@
   --stage-4: 100%;
   --stage-2-bg: #ff4500;
   --stage-3-bg: greenyellow;
-
-  --grad1: #feda75;
-  --grad2: #fa7e1e;
-  --grad3: #d62976;
-  --grad4: #962fbf;
-  --grad5: #4f5bd5;
-  --viewed: gray;
-  --bg-main: #000;
-  --bg-live: red;
 }
 
 /*resets*/
@@ -761,7 +752,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 50px 100px;
-  background-color: var(--bg-main);
+  background-color: var(--main-text-color);
   border-radius: 30px;
   gap: 50px;
   list-style-type: none;
@@ -797,7 +788,7 @@ body {
   width: 197px;
   height: 197px;
   border-radius: 50%;
-  border: 3px solid var(--bg-main);
+  border: 3px solid var(--main-text-color);
 }
 .img-wrapper ~ p {
   color: var(--profile-color);
@@ -813,6 +804,33 @@ body {
   background: var(--red-color-challenge9);
   position: absolute;
   top: 65%;
-  border: 3px solid var(--bg-main);
+  border: 3px solid var(--main-text-color);
 }
 /*challenge24 styles */
+.graph-ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.graph {
+  display: grid;
+  grid-template-columns: repeat(52, 1fr);
+  background: var(--main-text-color);
+  padding: 20px;
+}
+.squareGh {
+  height: 10px;
+  width: 10px;
+  background: var(--username-font-color);
+  margin: 5px;
+  margin-right: 0;
+  border-radius: 2px;
+}
+[data-value="3"] {
+  background: var(--blue-color-challenge9);
+}
+[data-value="5"] {
+  background: var(--blue-color-challenge14);
+}
+[data-value="10"] {
+  background: var(--border-color-challenge3);
+}
