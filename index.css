@@ -42,10 +42,17 @@
   --stage-2: 50%;
   --stage-3: 75%;
   --stage-4: 100%;
-  --stage-1-bg: red;
-  --stage-2-bg: orangered;
+  --stage-2-bg: #ff4500;
   --stage-3-bg: greenyellow;
-  --stage-4-bg: green;
+
+  --grad1: #feda75;
+  --grad2: #fa7e1e;
+  --grad3: #d62976;
+  --grad4: #962fbf;
+  --grad5: #4f5bd5;
+  --viewed: gray;
+  --bg-main: #000;
+  --bg-live: red;
 }
 
 /*resets*/
@@ -682,7 +689,7 @@ body {
     width: 0;
   }
   25% {
-    background: var(--stage-1-bg);
+    background: var(--red-color-challenge9);
     width: var(--stage-1);
   }
   50% {
@@ -694,7 +701,7 @@ body {
     width: var(--stage-3);
   }
   100% {
-    background: var(--stage-4-bg);
+    background: var(----green-color-challenge11);
     width: var(--stage-4);
   }
 }
@@ -750,4 +757,62 @@ body {
   }
 }
 /*challenge23 styles */
+.stories-menu {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 100px;
+  background-color: var(--bg-main);
+  border-radius: 30px;
+  gap: 50px;
+  list-style-type: none;
+}
+.story,
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.new .img-wrapper {
+  background: linear-gradient(
+    115deg,
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4),
+    var(--grad-color5)
+  );
+}
+.img-wrapper {
+  width: 210px;
+  height: 210px;
+  background: var(--btn-border-hover);
+  border-radius: 50%;
+}
+.img {
+  width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  border: 3px solid var(--bg-main);
+}
+.img-wrapper ~ p {
+  color: var(--profile-color);
+}
+.live {
+  position: relative;
+}
+.live::after {
+  content: "Live";
+  color: var(--white-color);
+  font-weight: 700;
+  padding: 2px 5px;
+  background: var(--red-color-challenge9);
+  position: absolute;
+  top: 65%;
+  border: 3px solid var(--bg-main);
+}
 /*challenge24 styles */
