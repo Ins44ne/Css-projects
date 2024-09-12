@@ -674,7 +674,7 @@ body {
 .prog-status {
   height: 40px;
   border-radius: 20px;
-  animation: stages 8s infinite ease-out;
+  animation: stages 8s infinite linear;
 }
 @keyframes stages {
   0% {
@@ -702,12 +702,12 @@ body {
 /*challenge21 styles */
 .card-flip {
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-  width: 700px;
-  height: 400px;
-  padding: 50px;
   text-align: center;
+  width: 700px;
+  height: 450px;
+  padding: 50px;
   font-size: 42px;
   border-radius: 20px;
   color: var(--white-color);
@@ -715,14 +715,14 @@ body {
   transition: transform 1s;
   transform-style: preserve-3d;
 }
-.card-flip:hover {
-  transform: rotateY(180deg);
-}
 .card-front {
   display: block;
 }
 .card-back {
   display: none;
+}
+.card-flip:hover {
+  transform: rotateY(180deg);
 }
 .card-flip:hover .card-front {
   display: none;
@@ -736,5 +736,18 @@ body {
   backface-visibility: hidden;
 }
 /*challenge22 styles */
+.loader-circle-animation {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  border: 30px solid var(--btn-border-hover);
+  border-top: 30px solid var(--grad-color5);
+  animation: circleLoading 3s linear infinite;
+}
+@keyframes circleLoading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /*challenge23 styles */
 /*challenge24 styles */
